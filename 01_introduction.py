@@ -4,5 +4,6 @@ from tkinter import *
 # This contains all the basic components needed for GUI
 root = Tk()
 
-# Starting the GUI logic
+# Write the GUI logic here
+
 root.mainloop()
