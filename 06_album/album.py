@@ -19,6 +19,7 @@ path = r"C:\Users\charc\Desktop\Python\Python GUI with Tkinter\06_album\images"
 
 # Creating a list to hold all the images
 img_list = []
+
 # Adding all the images to the list
 for i in os.listdir(path):
     if i.endswith(".png"):
