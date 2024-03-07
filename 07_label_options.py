@@ -21,7 +21,7 @@ root.mainloop()
 # Some Label options
 # text                  :   Add text
 # font                  :   Change the font styling [Example: font=("comicsansm", 36, "bold") or font="comicsansm 36 bold"]
-# bd or background      :   Background
+# bg or background      :   Background
 # fg or foreground      :   Foreground
 # padx                  :   X-padding
 # pady                  :   Y-padding
