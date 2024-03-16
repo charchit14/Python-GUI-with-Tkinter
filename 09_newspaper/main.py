@@ -4,7 +4,7 @@ from tkinter import *
 
 root = Tk()
 
-root.geometry("1080x720")
+root.geometry("1920x1080")
 
 root.title("The Guardian")
 
@@ -58,34 +58,43 @@ t2 = Label(f2, text='''The woman in this picture is Chloe Kelly.
 t2.pack(pady=25)
 
 
+# Third News
+# News Frame
+f3 = Frame(root, bg="grey", borderwidth=6)
+f3.pack(side=TOP, fill=X)
+
+# News Photo
+i3 = PhotoImage(file=r"C:\Users\charc\Desktop\Python\Python GUI with Tkinter\09_newspaper\images\jessP.png")
+i3_label = Label(f3, image=i3)
+i3_label.pack()
+
+# News Description
+t3 = Label(f3, text=''' The woman in this picture is Jess Park.
+                \nShe plays for Manchester City.
+                \nShe is a Forwarder.
+                \nShe represents England at national level. ''',
+                bg="black", fg="skyblue", font=50)
+t3.pack(pady=25)
 
 
-# # Third Image (Bottom Left)
-# img3 = PhotoImage(file=r"C:\Users\charc\Desktop\Python\Python GUI with Tkinter\09_newspaper\images\jessP.png")
-# img3_label = Label (image=img3)
-# img3_label.pack(side=BOTTOM, anchor=W)
+# Fourth News
+# News Frame
+f4 = Frame(root, bg="green", borderwidth=6)
+f4.pack(side=BOTTOM, fill=X)
 
-# # Description for the third image
-# text3 = Label(text='''The woman in this picture is Jess Park.
-#               She plays for Manchester City.
-#               She is a Forwarder.
-#               She represents England at national level''',
-#               bg="black", fg="skyblue", font=50)
-# text3.pack(side=BOTTOM, anchor=W)
+# News Photo
+# i4 = PhotoImage(file=r"C:\Users\charc\Desktop\Python\Python GUI with Tkinter\09_newspaper\images\yuiH.png")
+i4 = PhotoImage(file=r"C:\Users\charc\Desktop\Python\Python GUI with Tkinter\09_newspaper\images\logo.png")
+i4_label = Label(f4, image=i4)
+i4_label.pack()
 
-
-# # Fourth Image (Bottom Right)
-# img4 = PhotoImage(file=r"C:\Users\charc\Desktop\Python\Python GUI with Tkinter\09_newspaper\images\yuiH.png")
-# img4_label = Label (image=img4)
-# img4_label.pack(side= BOTTOM, anchor=E)
-
-# # Description for the second image
-# text4 = Label(text='''The woman in this picture is Yui Hasegawa.
-#               She plays for Manchester City.
-#               She is a Mid-fielder.
-#               She represents Japan at national level''',
-#               bg="black", fg="yellow", font=50)
-# text4.pack(side=BOTTOM, anchor=E)
+# News Description
+t4 = Label(f4, text=''' The woman in this picture is Yui Hasegawa.
+                \nShe plays for Manchester City.
+                \nShe is a Mid-fielder.
+                \nShe represents Japan at national level. ''',
+                bg="black", fg="skyblue", font=50)
+t4.pack(pady=25)
 
 
 root.mainloop()
