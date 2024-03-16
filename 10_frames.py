@@ -18,6 +18,6 @@ f2.pack(side=TOP, fill="x")
 
 # Creating a label for second frame
 t2 = Label(f2, text="WELCOME TO MY WORLD",font="100", fg="red")
-t2.pack()
+t2.pack(pady=100)
 
 root.mainloop()
